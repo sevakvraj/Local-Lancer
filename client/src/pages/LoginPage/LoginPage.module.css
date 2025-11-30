@@ -1,0 +1,44 @@
+.formContainer {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+.formContainer h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+.errorMessage {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.redirectText {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-secondary);
+}
+.fullWidthBtn {
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+.mapWrapper {
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: var(--surface-color);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- NEW --- */
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.instruction {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+/* --- NEW --- */
+.categorySelect {
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+.mapContainer {
+  height: 450px;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+/* --- NEW --- */
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.paginationContainer span {
+    font-weight: 600;
+}

@@ -1,0 +1,142 @@
+.card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--text-primary);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Base styles for the content --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.budget {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.category {
+  background-color: #eef2ff;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* --- STYLES FOR CATEGORY BACKGROUNDS --- */
+
+/* Base style for all cards that will have an image */
+.card.development,
+.card.writing,
+.card.videographer,
+.card.chef,
+.card.teacher,
+.card.design,
+.card.waiter { /* <-- Added .waiter */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* The dark overlay to make text readable */
+.card.development::before,
+.card.writing::before,
+.card.videographer::before,
+.card.chef::before,
+.card.teacher::before,
+.card.design::before,
+.card.waiter::before { /* <-- Added .waiter */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* Make overlay slightly darker on hover */
+.card.development:hover::before,
+.card.writing:hover::before,
+.card.videographer:hover::before,
+.card.chef:hover::before,
+.card.teacher:hover::before,
+.card.design:hover::before,
+.card.waiter:hover::before { /* <-- Added .waiter */
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Specific background image for each category */
+/* NOTE: For best results, make sure your image files are named in all lowercase */
+.card.development { background-image: url(../../assets/Development.jpg); }
+.card.writing { background-image: url(../../assets/Writing.jpg); }
+.card.videographer { background-image: url(../../assets/Videographer.jpg); }
+.card.chef { background-image: url(../../assets/chef.jpg); }
+.card.teacher { background-image: url(../../assets/Teacher.jpg); }
+.card.design { background-image: url(../../assets/Design.jpg); }
+.card.waiter { background-image: url(../../assets/Waiter.jpg); } /* <-- Added correct rule for .waiter */
+
+/* Override text styles for better readability on image backgrounds */
+.card.development .title, .card.writing .title, .card.videographer .title, .card.chef .title, .card.teacher .title, .card.design .title, .card.waiter .title {
+    color: white;
+}
+.card.development .budget, .card.writing .budget, .card.videographer .budget, .card.chef .budget, .card.teacher .budget, .card.design .budget, .card.waiter .budget {
+    color: #6ee7b7;
+}
+.card.development .description, .card.writing .description, .card.videographer .description, .card.chef .description, .card.teacher .description, .card.design .description, .card.waiter .description {
+    color: #e2e8f0;
+}
+.card.development .footer, .card.writing .footer, .card.videographer .footer, .card.chef .footer, .card.teacher .footer, .card.design .footer, .card.waiter .footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.card.development .footer a, .card.writing .footer a, .card.videographer .footer a, .card.chef .footer a, .card.teacher .footer a, .card.design .footer a, .card.waiter .footer a {
+    color: white;
+    font-weight: 700;
+}

@@ -1,0 +1,104 @@
+/* This is the main container that will have the background image */
+.detailContainer {
+  max-width: 800px; /* Optimal width for readability */
+  min-height: 450px; /* Ensures the box has a nice height */
+  margin: 2rem auto; /* Centers the box on the page */
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg); /* Use a more prominent shadow */
+  position: relative;
+  overflow: hidden; /* Keeps the overlay within the rounded corners */
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+}
+
+/* This ::before pseudo-element creates the semi-transparent overlay */
+.detailContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% black overlay */
+  z-index: 1;
+}
+
+.development {
+  background-image: url(../../assets/Development.jpg);
+}
+.writing {
+  background-image: url(../../assets/Writing.jpg);
+}
+.videographer {
+  background-image: url(../../assets/Videographer.jpg);
+}
+.chef {
+  background-image: url(../../assets/chef.jpg);
+}
+.teacher {
+  background-image: url(../../assets/Teacher.jpg);
+}
+.design {
+  background-image: url(../../assets/Design.jpg);
+}
+
+/* --- STYLES FOR THE CONTENT INSIDE THE BOX --- */
+
+/* This container ensures all text is on top of the overlay */
+.contentWrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for readability */
+  line-height: 1.2;
+}
+
+.clientInfo {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+.budget {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  margin-left: 1.5rem;
+}
+
+.detailsSection {
+    margin-top: 1rem;
+}
+
+.detailsSection h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.detailsSection p {
+  line-height: 1.8;
+  white-space: pre-wrap;
+  font-size: 1.1rem;
+}

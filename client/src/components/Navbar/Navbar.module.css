@@ -1,0 +1,36 @@
+.navbar {
+  background-color: var(--surface-color);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.logo:hover {
+  text-decoration: none;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navLinks a {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.userInfo {
+  color: var(--text-primary);
+}

@@ -1,0 +1,65 @@
+.dashboardContainer {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  min-height: 400px;
+}
+
+.header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.dashboardContainer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* --- NEW STYLES FOR THE TABLE --- */
+.dashboardTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.dashboardTable th, .dashboardTable td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dashboardTable th {
+    font-weight: 600;
+    background-color: var(--background-color);
+}
+
+.dashboardTable td a {
+    font-weight: 600;
+}
+
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status.open {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status.in-progress {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status.completed {
+    background-color: #d1fae5;
+    color: #065f46;
+}

@@ -1,0 +1,50 @@
+.footer {
+  background-color: var(--text-primary); /* A dark background color */
+  color: #a0aec0; /* A light grey for text, for good contrast */
+  padding: 3rem 5%; /* Padding on top/bottom and left/right */
+  margin-top: 4rem; /* Pushes it down from the main content */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* Creates 4 columns on larger screens, and fewer on smaller ones */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #4a5568; /* A darker grey for the separator line */
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerColumn h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--surface-color); /* White text for headings */
+  margin-bottom: 1rem;
+}
+
+.footerColumn a {
+  color: #a0aec0; /* Light grey for links */
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerColumn a:hover {
+  color: var(--surface-color); /* White text on hover */
+  padding-left: 5px; /* Slight indent effect on hover */
+  text-decoration: none;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+}

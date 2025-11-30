@@ -1,0 +1,46 @@
+.postContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+}
+
+.backLink {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+.postTitle {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.postContent {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.postContent h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.postContent p {
+  margin-bottom: 1.5rem;
+}

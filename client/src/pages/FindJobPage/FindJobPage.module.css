@@ -1,0 +1,63 @@
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: var(--background-color, #f7f9fa);
+    border-radius: var(--border-radius, 12px);
+    box-shadow: var(--shadow-md, 0 2px 12px rgba(0,0,0,0.08));
+    padding: 32px 24px;
+    font-family: var(--font-main, 'Inter', Arial, sans-serif);
+}
+
+.header {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color, #2d6cdf);
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.filterBar {
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 24px;
+    justify-content: center;
+    background: var(--surface-color, #fff);
+    border-radius: var(--border-radius, 12px);
+    box-shadow: var(--shadow-md, 0 2px 12px rgba(0,0,0,0.08));
+    padding: 1rem;
+}
+
+.input {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--input-bg, #f9f9f9);
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: var(--primary-color, #2d6cdf);
+    outline: none;
+}
+
+.gigsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 32px;
+}
+
+.mapSection {
+    margin-top: 32px;
+    border-radius: var(--border-radius, 12px);
+    overflow: hidden;
+    box-shadow: var(--shadow-md, 0 2px 12px rgba(0,0,0,0.08));
+}
+
+.noResults {
+    color: var(--error-color, #e74c3c);
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 18px;
+}

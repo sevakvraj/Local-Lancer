@@ -1,0 +1,18 @@
+.radioGroup {
+  margin-bottom: 1.5rem;
+}
+.radioGroup legend {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+.radioOptions {
+  display: flex;
+  gap: 1.5rem;
+}
+.radioOptions label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}

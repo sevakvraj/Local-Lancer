@@ -1,0 +1,52 @@
+.policyContainer {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  line-height: 1.8;
+}
+
+.policyContainer h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.policyContainer .lastUpdated {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.policyContainer h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.policyContainer p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.policyContainer ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.policyContainer li {
+  margin-bottom: 0.5rem;
+}
+
+.policyContainer a {
+  font-weight: 600;
+}
